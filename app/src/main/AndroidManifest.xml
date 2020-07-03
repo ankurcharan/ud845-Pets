@@ -39,8 +39,8 @@
         </activity>
 
         <provider
-            android:authorities="com.example.android.pets"
             android:name=".data.PetProvider"
+            android:authorities="com.example.android.pets"
             android:exported="false"/>
     </application>
 
