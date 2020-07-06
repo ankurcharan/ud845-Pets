@@ -317,14 +317,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         return true;
     }
 
-    /**
-     * Helper method to delete all pets in the database.
-     */
-    private void deleteAllPets() {
-        int rowsDeleted = getContentResolver().delete(PetEntry.CONTENT_URI, null, null);
-        Log.v("CatalogActivity", rowsDeleted + " rows deleted from pet database");
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // User clicked on a menu option in the app bar overflow menu
@@ -340,9 +332,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             case R.id.action_delete:
                 // Pop up confirmation dialog for deletion
                 showDeleteConfirmationDialog();
-                return true;
-            case R.id.action_delete_all_entries:
-                deleteAllPets();
                 return true;
             // Respond to a click on the "Up" arrow button in the app bar
             case android.R.id.home:
