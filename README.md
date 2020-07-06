@@ -1,7 +1,12 @@
 Pets App
 ===================================
 
-This app displays a list of pets and their related data that the user inputs.
+- This app displays a list of pets and their related data that the user inputs.   
+- Uses SQLite as a databse in android.   
+- It uses ContentProvider and Cursor to display data from database.   
+
+**Ankur Charan**
+
 Used in a Udacity course in the Android Basics Nanodegree by Google.
 
 Pre-requisites
